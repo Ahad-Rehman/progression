@@ -908,9 +908,6 @@ img.main4-section-image2 {
 }
 
 @media(max-width:1024px) {
-
-
-
   .typingwala p {
     margin-top: 50px;
   }
@@ -990,7 +987,7 @@ img.main4-section-image2 {
     color: #00D1FF;
     border-radius: 5px;
     transition: none;
-    pointer-events: none;
+    /* pointer-events: none; */
     background-color: #00011a;
   }
 
@@ -1000,7 +997,7 @@ img.main4-section-image2 {
     filter: blur(0px);
     height: 230px;
     width: 300px;
-    pointer-events: none;
+    /* pointer-events: none; */
     transition: none;
   }
 
@@ -1012,25 +1009,25 @@ img.main4-section-image2 {
   }
 
   .main3-button:hover {
-    pointer-events: none;
+    /* pointer-events: none; */
     border-color: #00D1FF;
     color: #00D1FF;
     background-color: #00011a;
   }
 
-  .button-head:hover {
-    pointer-events: none;
+  /* .button-head:hover {
+    pointer-events: none; 
     border-color: #00D1FF;
     color: #00D1FF;
-  }
+  } */
 
   .main3-boxes1:hover .main3-image {
-    transition: none;
-    pointer-events: none;
+    /* transition: none; */
+    /* pointer-events: none; */
   }
 
   .main3-boxes1:hover .main3-boxes-heading {
-    transition: none;
+    /* transition: none; */
     color: white;
     margin-top: 5px;
     font-weight: 800;
@@ -1038,7 +1035,7 @@ img.main4-section-image2 {
     width: 400px;
   }
 
-  .main3-boxes1:hover .button-head {
+   .main3-boxes1:hover .button-head {
     width: 100px;
     height: 30px;
     border-radius: 7px;
@@ -1046,10 +1043,10 @@ img.main4-section-image2 {
     justify-content: center;
     border: none;
     color: #00D1FF;
-    transition: none;
-    pointer-events: none;
+    /* transition: none; */
+    /* pointer-events: none; */
     border-color: #00D1FF;
-  }
+  } 
 
   .main3-boxes1:hover .main3-button {
     width: 100px;
@@ -1058,12 +1055,20 @@ img.main4-section-image2 {
     align-items: center;
     justify-content: center;
     color: #00D1FF;
-    transition: none;
+    /* transition: none; */
     border-color: #00D1FF;
   }
 
   .main3-boxes {
     background: linear-gradient(270deg, rgba(250, 0, 255, 0.41) 0%, rgba(250, 0, 255, 0) 100%);
+  }
+
+  .heading-1:after {
+    color: #FA00FF;
+  }
+
+  .heading-2:after {
+    color: #FA00FF;
   }
 }
 
