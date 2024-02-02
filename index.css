@@ -112,6 +112,18 @@ body::-webkit-scrollbar {
   border-radius: 0px;
 }
 
+
+.link-icons a {
+  color: #FA00FF;
+  background-color: #FA00FF;
+  width: 50px;
+  height: 50px;
+}
+
+.link-icons {
+  display: none;
+}
+
 /* main section from here  */
 
 
@@ -1100,6 +1112,26 @@ img.main4-section-image2 {
 /* mobile responsivness from here  */
 
 @media (max-width:890px) {
+
+  .link-icons {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .link-icons a {
+    background-color: #000000;
+  }
+
+  .link-icons a img {
+    width: 30px;
+    height: 30px;
+  }
+
   .line-main4 {
     display: none;
   }
@@ -1195,6 +1227,7 @@ img.main4-section-image2 {
   .navbar-buttons a::after {
     content: "";
     display: none;
+    transition: 1s;
   }
 
   .navbar {
@@ -1202,6 +1235,7 @@ img.main4-section-image2 {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    transition: 1s;
   }
 
   .navbar-contact {
@@ -1216,10 +1250,9 @@ img.main4-section-image2 {
     flex-direction: column;
     background-color: rgb(0, 0, 0);
     border-radius: 0px 0px 0px 20px;
-    transform: translateY(-200%);
-    transition: transform 0.7s ease-in-out;
+    transform: translateX(100%);
+    transition: transform 1s ease-out;
     z-index: 0;
-    /* filter: blur(20px); */
   }
 
   .navbar-buttons a {
@@ -1230,53 +1263,43 @@ img.main4-section-image2 {
   }
 
   .nav-change {
-    transform: translate(0%);
-    transition: 0.7s;
     z-index: 2;
     height: 100%;
     position: fixed;
     width: 50%;
     margin-top: 0px;
-    padding-top: 90px;
     opacity: 1;
+    transform: translate(0%);
+    transition: transform 0.7s; 
   }
 
   .change-body {
     background-color: #000000;
     opacity: 0.2;
     z-index: 5;
-  }
-
-  .nav-change::before {
-    content: "P<";
-    font-size: 6rem;
-    color: #00D1FF;
-    font-family: Karantina;
-    text-align: center;
-    margin-top: -200px;
+    transition: 0.7s;
   }
 
   .ham {
     display: block;
     z-index: 3;
     right: 0;
-    transition: 1s;
   }
 
   .change .bar1 {
     position: fixed;
     transform: rotate(45deg) translate(6px, 2px);
-    transition: 1s;
+    transition: 0.5s;
   }
 
   .change .bar2 {
     opacity: 0;
-    transition: 1s;
+    transition: 0.5s;
   }
 
   .change .bar3 {
     position: fixed;
-    transition: 1s;
+    transition: 0.5s;
     transform: rotate(-45deg) translate(8px, -3px);
   }
 
