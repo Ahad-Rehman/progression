@@ -9,6 +9,8 @@ const bodd4 = document.querySelector(".footer-sec");
 const bodd5 = document.querySelector(".typingwala");
 const bodd6 = document.querySelector(".main-heading-image");
 const bodd7 = document.querySelector(".vector-group");
+const navch = document.querySelector(".navchange");
+
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle("change")
@@ -39,4 +41,3 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 hiddenElements.forEach((el) => observer.observe(el));
-
