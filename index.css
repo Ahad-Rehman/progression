@@ -426,7 +426,13 @@ body::-webkit-scrollbar {
   color: #00D1FF;
   transition: 0.5s;
 }
-
+.main3-boxes1:hover .laptop{
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #00D1FF;
+  color: #00D1FF;
+}
 .main3-boxes1:hover .main3-button {
   width: 140px;
   height: 30px;
@@ -1131,6 +1137,7 @@ img.main4-section-image2 {
   display: none;
   text-decoration: none;
 }
+
 
 /* mobile responsivness from here  */
 @media (max-width:890px) {
