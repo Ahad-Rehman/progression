@@ -1130,7 +1130,9 @@ img.main4-section-image2 {
 
 /* mobile responsivness from here  */
 @media (max-width:890px) {
-
+.main1-mid video{
+    display: none;
+  }
   .laptop {
     display: none;
   }
