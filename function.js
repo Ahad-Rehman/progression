@@ -41,3 +41,10 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 hiddenElements.forEach((el) => observer.observe(el));
+
+
+var loader = document.getElementById("loadingscreen");
+
+window.addEventListener("load",function(){
+  loader.style.display = "none";
+})
