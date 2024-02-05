@@ -7,9 +7,9 @@ body {
 #loadingscreen {
   background: white url(loading.gif) no-repeat center center;
   background-size: 40%;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 100;
 }
 
@@ -1454,6 +1454,9 @@ img.main4-section-image2 {
 
 
 @media (max-width:560px) {
+  #loadingscreen {
+    background-size: 80%;
+  }
 
   .main4-heading {
     margin-left: 50px;
